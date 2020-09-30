@@ -9,3 +9,4 @@
         <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png" />
         <meta name="thumbnail" content="<?php echo get_template_directory_uri(); ?>/metathum.jpg" />
         <?php wp_head(); ?>
+    </head>
