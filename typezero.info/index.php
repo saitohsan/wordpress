@@ -1,5 +1,9 @@
-<!doctype html>
-<html lang="ja">
-    <head>
-    </head>
-</html>
+<?php
+get_header();
+?>
+<?php
+
+?>
+<?php
+get_footer();
+?>
