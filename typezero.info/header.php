@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
         <title><?php wp_title('｜', true, 'right'); ?></title>
         <meta name="robots" content="index, follow">
         <meta charset="<?php bloginfo('charset'); ?>">
