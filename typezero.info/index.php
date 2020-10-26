@@ -2,8 +2,11 @@
 get_header();
 ?>
 <?php
-
 ?>
+<div class="container">
+    <div class="row">
+    </div>
+</div>
 <?php
 get_footer();
 ?>
