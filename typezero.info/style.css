@@ -207,3 +207,18 @@ footer{
         margin-bottom: 1.5rem;
     }
 }
+
+/* --- SP表示 --- */
+@media(max-width: 600px){
+    html{
+        font-size: 15px;
+    }
+    .header-inner,
+    .container,
+    .footer-inner{
+        padding: .8rem;
+    }
+    .contents{
+        margin-bottom: 1rem;
+    }
+}
