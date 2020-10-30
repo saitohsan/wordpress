@@ -157,3 +157,38 @@ footer{
 }
 
 /* --- for test end --- */
+
+
+/* --- コンテンツのサイズ指定 --- */
+.header-inner,
+.container,
+.footer-inner{
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.25rem;
+}
+
+/* --- コンテンツの位置指定 --- */
+/* --- メインを左、サイドバーを右 --- */
+.container{
+    padding: 2rem 1.25rem;
+}
+
+.container:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.contents{
+    float: left;
+    width: 70%;
+    margin-right: 3%;
+}
+
+.sidebar{
+    float: left;
+    width: 27%;
+}
