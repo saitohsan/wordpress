@@ -10,5 +10,42 @@
     <body <?php body_class(); ?>>
         <header>
             <div class="header-inner">
+                <?php
+                if(is_home() || is_front_page()) {
+                  $title_tag_start = '<h1 class="site-title">';
+                  $title_tag_end = '</h1>';
+                } else {
+                  $title_tag_start = '<p class="site-title">';
+                  $title_tag_end =  '</p>';
+                }
+                ?>
+
+                <!--タイトルを画像にする場合-->
+                <div class="site-title-wrap">
+                  <?php echo $title_tag_start; ?>
+                    <a href="<?php echo home_url(); ?>">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/title.png">
+                    </a>
+                  <?php echo $title_tag_end; ?>
+                </div>
+
+                <!--タイトルを文字にする場合-->
+                <div class="site-title-wrap">
+                  <?php echo $title_tag_start; ?>
+                    <a href="<?php echo home_url(); ?>">
+                      <?php bloginfo( 'name' ); ?>
+                    </a>
+                  <?php echo $title_tag_end; ?>
+                </div>
+                <!--ヘッダーメニュー-->
+                <div id="header-nav-wrap" class="header-nav-wrap">
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'header-nav',
+                        'container' => 'nav',
+                        'container_class' => 'header-nav',
+                        'container_id' => 'header-nav',
+                        'fallback_cb' => ''
+                    ) ); ?>
+                </div>
             </div>
         </header>
