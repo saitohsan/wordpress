@@ -11,4 +11,13 @@ add_theme_support('post-thumbnails');
 register_nav_menu('header_nav', 'ヘッダーナビゲーション');
 register_nav_menu('footer_nav', 'フッターナビゲーション');
 
+// サイドバー
+register_sidebar(array{
+    'name' => 'サイドバー',
+    'before_widget' => '<div class=""sidebar-wrapper>',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="sidebar-title">',
+    'after_title' => '</h4>'
+});
+
 ?>
