@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    </head>
+<?php get_header(); ?>
     <body>
     </body>
 </html>
